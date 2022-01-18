@@ -1,10 +1,9 @@
-
-
 #include <iostream>
 #include <vector>
 #include <map>
 #include <time.h>
 #include <cstdlib>
+
 using namespace std;
 
 void wypisz(int w)
@@ -61,7 +60,7 @@ vector<int> unikalnosc(vector<int> tab)
 	return wynik;
 }
 
-bool czyNalezyKlucz(map<int, int>m, int element)
+bool czyNalezyKlucz(map<int, int> m, int element)
 {
 	for (auto item : m)
 	{
@@ -72,7 +71,7 @@ bool czyNalezyKlucz(map<int, int>m, int element)
 	}
 	return false;
 }
-map<int, int> czestosc(vector<int>tab)
+map<int, int> czestosc(vector<int> tab)
 {
 	map<int, int>wynik;
 	for (int i = 0; i < tab.size(); i++)
