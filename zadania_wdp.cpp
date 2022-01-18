@@ -125,7 +125,7 @@ vector<int> generuj(int ilosc, int max, int min)
 bool palindrom(vector<int> tab){
 	int argc = tab.size()/2;
 	for (int x = 0; x != argc; x++){
-		if (tab[x] != tab[tab.size()-1-argc]){
+		if (tab[x] != tab[tab.size()-1-x]){
 			return false;
 		}
 	}
